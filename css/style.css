@@ -22,6 +22,71 @@ main.principal .text-wraper p {
     font-size: 20px;
 }
 
+section.tipos-de-servicos {
+    background-color: rgb(231, 231, 231);
+}
+
+section.tipos-de-servicos .container {
+    max-width: 1280px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 2%;
+    text-align: center;
+}
+
+section.tipos-de-servicos .container>h2 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.bg-azul-claro {
+    background-color: rgb(102, 102, 253);
+}
+
+.bg-azul {
+    background-color: rgb(15, 15, 170);
+}
+
+.box {
+    padding: 0 8px;
+    color: white;
+    margin: 8px 5px;
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    position: relative;
+}
+
+.circilo {
+    top: -20%;
+    left: 33%;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.circilo img {
+    width: 50%;
+    margin-top: 20%;
+}
+
+.circilo:hover,
+.box:hover .circilo {
+    background-color: blue;
+}
+
+.box h2 {
+    margin-top: 58px;
+    text-transform: uppercase;
+}
+
+.box p {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
 
 /*inicio media queries*/
 
