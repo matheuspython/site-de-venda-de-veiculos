@@ -30,7 +30,7 @@ section.tipos-de-servicos .container {
     max-width: 1280px;
     width: 98%;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 10px 2%;
     text-align: center;
 }
 
@@ -87,8 +87,75 @@ section.tipos-de-servicos .container>h2 {
     text-transform: uppercase;
 }
 
+section.ofertas {
+    width: 100%;
+}
+
+section.ofertas .container {
+    width: 95%;
+    padding: 0 2%;
+    margin: 0 auto;
+    max-width: 1280px;
+    text-align: center;
+}
+
+section.ofertas .container h2 {
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.oferta {
+    display: inline-block;
+    width: 250px;
+    height: 290px;
+    text-align: left;
+}
+
+.oferta img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.oferta h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.oferta p {
+    margin: 4px 0;
+}
+
+.oferta a.btn {
+    color: white;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: orangered;
+    text-decoration: none;
+}
+
 
 /*inicio media queries*/
+
+@media screen and (max-width: 600px) {
+    /*media queri das boxes*/
+    .box {
+        width: 100%;
+        padding: 0 8px;
+        margin: 25px 5px;
+    }
+    .circilo {
+        transform: translate(20%, 0);
+    }
+    .oferta {
+        display: inline-block;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 425px) {
     main.principal .text-wraper {
