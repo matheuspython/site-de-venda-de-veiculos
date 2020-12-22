@@ -1,0 +1,97 @@
+.mais-header {
+    padding-top: 80px;
+}
+
+header.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(243, 243, 243);
+}
+
+header.header ul {
+    list-style-type: none;
+}
+
+header.header ul li a {
+    text-decoration: none;
+}
+
+header.header .container-header {
+    width: 95%;
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.header .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header.header nav.menu-desktop ul {
+    display: flex;
+}
+
+header.header nav.menu-desktop ul li {
+    margin: 0 8px;
+}
+
+header.header nav.menu-desktop ul li a {
+    font-size: 20px;
+    color: rgb(30, 231, 231);
+    transition: .4s;
+}
+
+header.header nav.menu-desktop ul li a:hover {
+    font-size: 24px;
+    color: rgb(22, 190, 190);
+    font-weight: bold;
+    position: relative;
+    top: -4px;
+}
+
+nav.menu-mobile {
+    display: none;
+}
+
+ul.menu-mobile {
+    display: none;
+}
+
+
+/*inicio media queryrs*/
+
+@media screen and (max-width: 768px) {
+    header.header nav.menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+        cursor: pointer;
+    }
+    ul.menu-mobile {
+        z-index: 99;
+        transition: .4s;
+        display: none;
+        background-color: #fdfbfbcc;
+        text-align: center;
+    }
+    ul.menu-mobile li {
+        font-size: 18px;
+        cursor: pointer;
+        padding: 8px 0;
+        border-bottom: 1px solid;
+    }
+    ul.menu-mobile li:hover,
+    ul.menu-mobile li a:hover {
+        padding: 9px 0;
+        transition: .4s;
+        color: white;
+        background-color: rgb(215, 215, 216);
+    }
+}
