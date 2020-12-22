@@ -1,0 +1,34 @@
+main.principal {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/caroBgMain.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main.principal .text-wraper {
+    float: right;
+    margin: 130px 120px;
+    color: white;
+}
+
+main.principal .text-wraper h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+main.principal .text-wraper p {
+    font-size: 20px;
+}
+
+
+/*inicio media queries*/
+
+@media screen and (max-width: 425px) {
+    main.principal .text-wraper {
+        float: none;
+        margin: 20vh auto;
+        text-align: center;
+    }
+}
